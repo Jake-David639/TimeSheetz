@@ -1,45 +1,104 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <meta charset="UTF-8">
-    <title>TimeSheet Warriors</title>
-
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- Bootstrap CDN-->
-    <link rel="stylesheet" src="assets/css"/>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-    <!-- Firebase Reference -->
-    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
-
+    <script src="./assets/javascript/app.js"></script>
 </head>
-
 <body>
 
-    <div class="container">
+<div class="timesheetTable">
+    <table class="table table-dark">
+        <h3> Timesheet Table </h3>
+
+        <hr>
+
+        <br>
+        <thead>
+            <tr>
+                <th scope="col">Employee name</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">Title Position</th>
+                <th scope="col">Months Worked</th>
+                <th scope="col">Monthly Rate</th>
+                <th scope="col">Total Billed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
 
 
+<div class="container">
+
+
+        
         <form>
-
-            <label for="name-input">Name</label>
-            <input id="name-input">
-            <label for="start-date-input">Start Date</label>
-            <input id="start-date-input">
-            <label for="role-input">Title/Position</label>
-            <input id="role-input">
-            <label for="month-rate-input">Monthly Rate</label>
-            <input id="month-rate-input">
-
+            <div class="form-group">
+                <label for="name-input">Name</label>
+                <input type="name" class="form-control" id="name-input">
+            </div>
+            <div class="form-group">
+                <label for="start-date-input">Start Date</label>
+                <input type="date" class="form-control" id="start-date-input">
+            </div>
+            <div class="form-group">
+                <label for="role-input">Title/Position</label>
+                <input type="text" class="form-control" id="role-input">
+            </div>
+            <div class="form-group">
+                <label for="worked-input">Months Worked</label>
+                <input type="text" class="form-control" id="worked-input">
+            </div>
+            <div class="form-group">
+                <label for="month-rate-input">Monthly Rate</label>
+                <input type="text" class="form-control" id="month-rate-input">
+            </div>
+            <div class="form-group">
+                <label for="total-billed-input">Total Billed</label>
+                <input type="text" class="form-control" id="total-billed-input">
+            </div>
+            <div class="exampleCheck1k">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitf">Submit</button>
         </form>
+
     </div>
 
-    <!-- JavaScript -->
-    <script src="assets/app.js"></script>
+
+
 
 </body>
-
 </html>
